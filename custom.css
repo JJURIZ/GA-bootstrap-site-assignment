@@ -1,0 +1,68 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.primary-h1 {
+    font-size: 5rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    top: 0;
+    left: 50%;
+    text-align: center;
+    padding: .3rem .3rem;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    background-image: linear-gradient(to right, #333333, #384345, #535353);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation-name: moveInTop;
+    animation-duration: 5s;
+}
+
+.carousel_size_reducer {
+    width: 50vw;
+    height: 40vh;
+    margin: 0 auto;
+}
+
+.img_normalize {
+    overflow: hidden;
+    width: 50vw;
+    height: 40vh;
+}
+
+
+/* ANIMATION */
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
